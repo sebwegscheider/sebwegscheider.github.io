@@ -10,3 +10,8 @@ newNode.innerHTML = '<thead> <tr class="details-firstrow englishonly"><th>Descri
 
 var x = document.getElementById("productfamilyheader").textContent;
 newNode.classList.add(x);
+document.querySelector('div.product-dimensions__container').id = 'detailsection';
+
+var newerNode = document.createElement('div');
+referenceNode.parentNode.insertBefore(newerNode, referenceNode.nextSibling);
+newerNode.innerHTML = '<h3 class="product-dimensions__title englishonly" style="">Details &amp; Dimensions</h3><h3 class="product-dimensions__title germanonly" style="">Details &amp; Maße</h3>';
