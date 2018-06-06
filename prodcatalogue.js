@@ -14,4 +14,4 @@ document.querySelector('div.product-dimensions__container').id = 'detailsection'
 
 var newerNode = document.createElement('div');
 referenceNode.parentNode.insertBefore(newerNode, referenceNode.nextSibling);
-newerNode.innerHTML = '<h3 class="product-dimensions__title englishonly" style="">Details &amp; Dimensions</h3><h3 class="product-dimensions__title germanonly" style="">Details &amp; Maße</h3>';
+newerNode.innerHTML = '<h3 class="product-dimensions__title" id="fr" style="">Details &amp; Dimensions</h3><h3 class="product-dimensions__title" id="cs" style="">Details &amp; Dimensions</h3><h3 class="product-dimensions__title" id="en" style="">Details &amp; Dimensions</h3><h3 class="product-dimensions__title"  id="de"  style="">Details &amp; Maße</h3>';
