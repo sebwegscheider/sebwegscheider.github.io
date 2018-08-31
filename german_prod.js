@@ -16,4 +16,6 @@ var newerNode = document.createElement('div');
 referenceNode.parentNode.insertBefore(newerNode, referenceNode.nextSibling);
 newerNode.innerHTML = '<h3 class="product-dimensions__title" id="fr" style="">Informations techniques &amp; Dimensions</h3><h3 class="product-dimensions__title" id="cs" style="">Podrobnosti &amp; Rozměry</h3><h3 class="product-dimensions__title" id="en" style="">Details &amp; Dimensions</h3><h3 class="product-dimensions__title"  id="de"  style="">Details &amp; Maße</h3>';
 
+// Add HTML for Modal
+
 $("body").append('<!-- Buy Now Modal --><div id="buynowModal" class="modal"><div class="modal-content"><span class="close">&times;</span><p>Some text in the Modal..</p></div></div>');
