@@ -31,7 +31,7 @@ window.addEventListener("load", function(){
     {  
         var row = rows [i];
         this.console.log(row);
-        var sku = document.row.parentElement.querySelector("td:nth-child(2)").innerText; 
+        var sku = document.row.parentNode.parentNode.querySelector("td:nth-child(2)").innerText; 
         console.log(sku);
     }
 
