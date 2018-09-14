@@ -33,7 +33,7 @@ window.addEventListener("load", function(){
         link.setAttribute("href", soneparlink);
 
         // GAUTZSCH
-        var gautzschlink = 'www.onlinesystem.de?dpart='+'test';     
+        var gautzschlink = 'https://www.onlinesystem.de?dpart='+'test';     
         var link = document.getElementById("gautzsch");
         link.setAttribute("href", gautzschlink);     
     });
