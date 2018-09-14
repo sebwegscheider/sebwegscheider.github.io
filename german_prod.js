@@ -24,17 +24,32 @@ document.body.appendChild(modal);
 // Change links to wholesale within modal depending on click source
 
 window.addEventListener("load", function(){
+
+    // get SKU
+    var rows = document.getElementsByClassName('buynowbutton');
+    for(var i = 0; i < rows.length; i++)
+    {
+        this.console.log(this);
+        //var sku = document.getElementById("myLI").parentElement.nodeName; 
+    }
+
     $('.buynowbutton').click(function(){
         console.log('you clicked!');
+        // SONEPAR SKU
 
-        // SONEPAR
+
+        // GAUTZSCH SKU
+        
+        // SONEPAR Link
         var soneparlink = 'https://www.sonepar.de/shop/redirect?action=search&query='+'test';
         var link = document.getElementById("sonepar");
         link.setAttribute("href", soneparlink);
 
-        // GAUTZSCH
+        // GAUTZSCH Link
         var gautzschlink = 'https://www.onlinesystem.de?dpart='+'test';     
         var link = document.getElementById("gautzsch");
-        link.setAttribute("href", gautzschlink);     
+        link.setAttribute("href", gautzschlink);  
+        
+        
     });
 });
