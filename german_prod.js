@@ -18,6 +18,6 @@ newerNode.innerHTML = '<h3 class="product-dimensions__title" id="fr" style="">In
 
 // Add HTML for Modal
 var modal = document.createElement('div');
-modal.innerHTML ='<div id="open-modal" class="modal-window"> <div> <a href="#modal-close" title="Close" class="modal-close">X</a> <h1>Jetzt kaufen bei...</h1> <ul> <li><a class="wholesale_linkout" id="sonepar" target="_blank" href="https://www.sonepar.de/shop/redirect?action=search&query=">Sonepar</a></li><li><a class="wholesale_linkout" id="gautzsch" target="_blank" href="www.onlinesystem.de?dpart=">Gautzsch</a></li></ul> </div></div>';
+modal.innerHTML ='<div id="open-modal" class="modal-window"> <div> <a href="#modal-close" title="Close" class="modal-close">X</a> <h2 style="margin-bottom:1rem;">Jetzt kaufen bei...</h2> <ul> <li style="margin-bottom:1rem;"><a class="wholesale_linkout" id="gautzsch" target="_blank" href="www.onlinesystem.de?dpart=">Gautzsch</a></li><li><a class="wholesale_linkout" id="sonepar" target="_blank" href="https://www.sonepar.de/shop/redirect?action=search&query=">Sonepar</a></li></ul> </div></div>';
 document.body.appendChild(modal);
 
