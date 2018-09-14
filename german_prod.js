@@ -28,9 +28,11 @@ window.addEventListener("load", function(){
     // get SKU
     var rows = document.getElementsByClassName('buynowbutton');
     for(var i = 0; i < rows.length; i++)
-    {
-        this.console.log(this);
-        //var sku = document.getElementById("myLI").parentElement.nodeName; 
+    {  
+        var row = rows [i];
+        this.console.log(row);
+        var sku = document.row.parentElement.parentElement.querySelector("td:nth-child(2)").innerText; 
+        console.log(sku);
     }
 
     $('.buynowbutton').click(function(){
