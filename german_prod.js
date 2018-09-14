@@ -18,7 +18,7 @@ newerNode.innerHTML = '<h3 class="product-dimensions__title" id="fr" style="">In
 
 // Add HTML for Modal
 
-$("body").append(newFunction());
+document.body.appendChild(newFunction());
 
 function newFunction() {
     return '<div id="open-modal" class="modal-window"> <div> <a href="#modal-close" title="Close" class="modal-close">X</a> <h1>Jetzt kaufen bei...</h1> <ul> <li><a class="wholesale_linkout" id="sonepar" target="_blank" href="https://www.sonepar.de/shop/redirect?action=search&query=">Sonepar</a></li><li><a class="wholesale_linkout" id="gautzsch" target="_blank" href="www.onlinesystem.de?dpart=">Gautzsch</a></li></ul> </div></div>';
