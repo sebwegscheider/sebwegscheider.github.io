@@ -26,13 +26,11 @@ document.body.appendChild(modal);
 window.addEventListener("load", function(){
 
     // get SKU
-    var rows = document.getElementsByClassName('buynowbutton');
+    var rows = document.getElementsByClassName('germanonly');
     for(var i = 0; i < rows.length; i++)
     {  
         var row = rows [i];
-        this.console.log(row);
-        var sku = document.row.parentNode.parentNode.querySelector("td:nth-child(2)").innerText; 
-        console.log(sku);
+        this.console.log(this);
     }
 
     $('.buynowbutton').click(function(){
