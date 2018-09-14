@@ -30,7 +30,9 @@ window.addEventListener("load", function(){
     for(var i = 0; i < rows.length; i++)
     {  
         var row = rows [i];
-        this.console.log(this);
+        function getSKU(row) {
+            console.log(this);
+        }
     }
 
     $('.buynowbutton').click(function(){
