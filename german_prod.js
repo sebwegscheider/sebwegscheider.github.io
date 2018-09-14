@@ -17,6 +17,7 @@ referenceNode.parentNode.insertBefore(newerNode, referenceNode.nextSibling);
 newerNode.innerHTML = '<h3 class="product-dimensions__title" id="fr" style="">Informations techniques &amp; Dimensions</h3><h3 class="product-dimensions__title" id="cs" style="">Podrobnosti &amp; Rozměry</h3><h3 class="product-dimensions__title" id="en" style="">Details &amp; Dimensions</h3><h3 class="product-dimensions__title"  id="de"  style="">Details &amp; Maße</h3>';
 
 // Add HTML for Modal
-
-document.body.appendChild('<div id="open-modal" class="modal-window"> <div> <a href="#modal-close" title="Close" class="modal-close">X</a> <h1>Jetzt kaufen bei...</h1> <ul> <li><a class="wholesale_linkout" id="sonepar" target="_blank" href="https://www.sonepar.de/shop/redirect?action=search&query=">Sonepar</a></li><li><a class="wholesale_linkout" id="gautzsch" target="_blank" href="www.onlinesystem.de?dpart=">Gautzsch</a></li></ul> </div></div>');
+var modal = document.createElement('div');
+modal.innerHTML ='<div id="open-modal" class="modal-window"> <div> <a href="#modal-close" title="Close" class="modal-close">X</a> <h1>Jetzt kaufen bei...</h1> <ul> <li><a class="wholesale_linkout" id="sonepar" target="_blank" href="https://www.sonepar.de/shop/redirect?action=search&query=">Sonepar</a></li><li><a class="wholesale_linkout" id="gautzsch" target="_blank" href="www.onlinesystem.de?dpart=">Gautzsch</a></li></ul> </div></div>';
+document.body.appendChild(modal);
 
