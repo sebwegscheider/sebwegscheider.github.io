@@ -38,17 +38,15 @@ window.addEventListener("load", function(){
     $('.buynowbutton').click(function(){
         console.log('you clicked!');
         // SONEPAR SKU
-
-
+        var soneparsku = this.getAttribute("data-sonepar");
         // GAUTZSCH SKU
-        
+        var gautzschsku = this.getAttribute("data-gautzsch");
         // SONEPAR Link
-        var soneparlink = 'https://www.sonepar.de/shop/redirect?action=search&query='+'test';
+        var soneparlink = 'https://www.sonepar.de/shop/redirect?action=search&query=' + soneparsku;
         var link = document.getElementById("sonepar");
         link.setAttribute("href", soneparlink);
-
         // GAUTZSCH Link
-        var gautzschlink = 'https://www.onlinesystem.de?dpart='+'test';     
+        var gautzschlink = 'https://www.onlinesystem.de?dpart=' + gautzschsku;     
         var link = document.getElementById("gautzsch");
         link.setAttribute("href", gautzschlink);  
         
