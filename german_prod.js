@@ -46,7 +46,7 @@ window.addEventListener("load", function(){
         var link = document.getElementById("sonepar");
         link.setAttribute("href", soneparlink);
         // GAUTZSCH Link
-        var gautzschlink = 'https://www.onlinesystem.de/ArticleViews/ArticleDetails.aspx?Article=' + gautzschsku;     
+        var gautzschlink = 'https://www.onlinesystem.de?dpart=' + gautzschsku;     
         var link = document.getElementById("gautzsch");
         link.setAttribute("href", gautzschlink);          
     });
