@@ -52,8 +52,11 @@ window.addEventListener("load", function(){
     });
 });
 var pdflink = document.querySelector('a.product-detail-button.catalogue');
-for (var i = pdflink.attributes.length - 1; i >= 0; i--){
-    pdflink.removeAttribute(pdflink.attributes[i].name);
-}
-//pdflink.classList.add("product-detail-button");
-pdflink.setAttribute("href", "#detailsection");
+var detaillink = document.createElement("a");
+var detaillink_class = document.createAttribute("class");
+detaillink_class.value = "product-detail-button";
+var detaillink_href = document.createAttribute("href");
+detaillink_href.value = "#detailsection";
+detaillink.innerHTML += '<span class="product-detail-button__text-container"><span class="product-detail-button__text">Details</span><span class="product-detail-button__type">PDF</span></span><svg class="inline-svg product-detail-button__svg--arrow"><use class="inline-svg__use" xlink:href="/static/images/sprite.svg#arrow-right-open"></use></svg>';
+pdflink.parentNode.appendChild(detaillink);
+pdflink.parentNode.removeChild(pdflink);
