@@ -55,5 +55,5 @@ var pdflink = document.querySelector('a.product-detail-button.catalogue');
 for (var i = pdflink.attributes.length - 1; i >= 0; i--){
     pdflink.removeAttribute(pdflink.attributes[i].name);
 }
-pdflink.classList.add("product-detail-button");
+//pdflink.classList.add("product-detail-button");
 pdflink.setAttribute("href", "#detailsection");
