@@ -60,7 +60,7 @@ window.addEventListener("load", function(){
         // GAUTZSCH Link
         var gautzschlink = 'https://www.onlinesystem.de?dpart=' + gautzschsku;     
         var link = document.getElementById("gautzsch");
-        if (gautzschzsku) {    
+        if (gautzschsku) {    
             link.setAttribute("href", gautzschlink);       
             link.parentNode.style.display='block';    
         }
