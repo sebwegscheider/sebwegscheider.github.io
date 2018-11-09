@@ -50,7 +50,7 @@ window.addEventListener("load", function(){
         // SONEPAR Link
         var soneparlink = 'https://www.sonepar.de/shop/redirect?action=search&query=' + soneparsku;
         var link = document.getElementById("sonepar");
-        if (soneparzsku) {    
+        if (soneparsku) {    
             link.setAttribute("href", soneparlink);       
             link.parentNode.style.display='block';    
         }
