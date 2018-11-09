@@ -50,15 +50,33 @@ window.addEventListener("load", function(){
         // SONEPAR Link
         var soneparlink = 'https://www.sonepar.de/shop/redirect?action=search&query=' + soneparsku;
         var link = document.getElementById("sonepar");
-        link.setAttribute("href", soneparlink);
+        if (soneparzsku) {    
+            link.setAttribute("href", soneparlink);       
+            link.parentNode.style.display='block';    
+        }
+        else {
+            link.parentNode.style.display='none';
+        }
         // GAUTZSCH Link
         var gautzschlink = 'https://www.onlinesystem.de?dpart=' + gautzschsku;     
         var link = document.getElementById("gautzsch");
-        link.setAttribute("href", gautzschlink);          
+        if (gautzschzsku) {    
+            link.setAttribute("href", gautzschlink);       
+            link.parentNode.style.display='block';    
+        }
+        else {
+            link.parentNode.style.display='none';
+        }
         // ZAJADACZ Link
         var zajadaczlink = 'https://www.zajadacz.de/product/' + zajadaczsku;     
         var link = document.getElementById("zajadacz");
-        link.setAttribute("href", zajadaczlink);       
+        if (zajadaczsku) {    
+            link.setAttribute("href", zajadaczlink);       
+            link.parentNode.style.display='block';    
+        }
+        else {
+            link.parentNode.style.display='none';
+        }
         // FAMO Link
         var famolink = 'https://www.famo24.de/landingpage/?deepurl=www.famo24.de/artikel/art' + famosku;     
         var link = document.getElementById("famo");
@@ -72,7 +90,13 @@ window.addEventListener("load", function(){
         // LICHTZENTRALE Link
         var lichtzentralelink = 'https://shop.lichtzentrale.de/shop.php?cmd=Detail/' + lichtzentralesku + '&nlid=4';     
         var link = document.getElementById("lichtzentrale");
-        link.setAttribute("href", lichtzentralelink);       
+        if (lichtzentralesku) {
+            link.setAttribute("href", lichtzentralelink);  
+            link.parentNode.style.display='block';    
+        }  
+        else {
+            link.parentNode.style.display='none';
+        }   
     });
 });
 
