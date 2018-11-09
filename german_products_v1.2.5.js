@@ -96,6 +96,15 @@ window.addEventListener("load", function(){
         }  
         else {
             link.parentNode.style.display='none';
+            if (famosku == null || famosku == "") {
+                if (soneparsku == null || soneparsku == "") {
+                    if (gautzschsku == null || gautzschsku == "") {
+                        if (zajadaczsku == null || zajadaczsku == "") {
+                            console.log("no one has this product");
+                        }
+                    }
+                }
+            }
         }   
     });
 });
@@ -110,15 +119,3 @@ pdflink.parentNode.appendChild(detaillink);
 pdflink.parentNode.removeChild(pdflink);
 
     
-
-function removeBuyNowButton(element) {
-    element.style.display='none';
-}
-  
-var buttons = document.getElementsByClassName("buynowbutton");
-
-for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("load", function() {
-        removeBuyNowButton(this);
-    }, false);
-}
