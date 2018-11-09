@@ -60,7 +60,7 @@ window.addEventListener("load", function(){
         var link = document.getElementById("zajadacz");
         link.setAttribute("href", zajadaczlink);       
         // FAMO Link
-        var famolink = 'www.famo24.de/landingpage/?deepurl=www.famo24.de/artikel/art' + famosku;     
+        var famolink = 'https://www.famo24.de/landingpage/?deepurl=www.famo24.de/artikel/art' + famosku;     
         var link = document.getElementById("famo");
         link.setAttribute("href", famolink);    
         // LICHTZENTRALE Link
