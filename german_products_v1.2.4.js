@@ -108,3 +108,17 @@ detaillink.innerHTML += '<span class="product-detail-button__text-container"><sp
 
 pdflink.parentNode.appendChild(detaillink);
 pdflink.parentNode.removeChild(pdflink);
+
+    
+
+function removeBuyNowButton(element) {
+    element.style.display='none';
+}
+  
+var buttons = document.getElementsByClassName("buynowbutton");
+
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("load", function() {
+        removeBuyNowButton(this);
+    }, false);
+}
