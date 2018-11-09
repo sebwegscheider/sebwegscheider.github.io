@@ -62,7 +62,13 @@ window.addEventListener("load", function(){
         // FAMO Link
         var famolink = 'https://www.famo24.de/landingpage/?deepurl=www.famo24.de/artikel/art' + famosku;     
         var link = document.getElementById("famo");
-        link.setAttribute("href", famolink);    
+        if (famosku) {
+            link.setAttribute("href", famolink);
+            link.parentNode.style.display='block';    
+        }
+        else {
+            link.parentNode.style.display='none';
+        }
         // LICHTZENTRALE Link
         var lichtzentralelink = 'https://shop.lichtzentrale.de/shop.php?cmd=Detail/' + lichtzentralesku + '&nlid=4';     
         var link = document.getElementById("lichtzentrale");
