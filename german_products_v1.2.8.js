@@ -2,7 +2,7 @@ function removeHeadlines() {
 
     var elements = document.getElementsByClassName("product-dimensions__title");
     while (elements.length > 0) {
-      elements[0].parentNode.removeChild(elements[0]);
+      elements[0].style.display = "none";
     }
   }
 
@@ -10,7 +10,7 @@ function removeHeadlines() {
 
     var elements = document.getElementsByClassName("details-table");
     while (elements.length > 0) {
-      elements[0].parentNode.removeChild(elements[0]);
+      elements[0].style.display = "none";
     }
   }
 
