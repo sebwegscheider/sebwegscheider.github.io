@@ -1,22 +1,3 @@
-function removeHeadlines() {
-
-    var elements = document.getElementsByClassName("product-dimensions__title");
-    while (elements.length > 0) {
-      elements[0].style.display = "none";
-    }
-  }
-
-  function removeTables() {
-
-    var elements = document.getElementsByClassName("details-table");
-    while (elements.length > 0) {
-      elements[0].style.display = "none";
-    }
-  }
-
-  removeHeadlines();
-  removeTables();
-
 document.querySelector('h1.product-details-header__title').id = 'productfamilyheader';
 // Create a new element
 var newNode = document.createElement('table');
