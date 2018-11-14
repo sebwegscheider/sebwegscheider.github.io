@@ -25,6 +25,8 @@ document.body.appendChild(modal);
 
 var style = document.createElement('style');
 style.innerHTML = '  .product-dimensions__container>table:first-child { display:none}';
+document.head.appendChild(modal);
+
 
 // Change links to wholesale within modal depending on click source
 
