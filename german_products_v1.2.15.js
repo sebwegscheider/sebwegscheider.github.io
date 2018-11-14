@@ -2,6 +2,7 @@ document.querySelector('h1.product-details-header__title').id = 'productfamilyhe
 // Create a new element
 var newNode = document.createElement('table');
 newNode.classList.add("details-table");
+newNode.id = "germantable";
 // Get the reference node
 var referenceNode = document.querySelector('h3.product-dimensions__title');
 // Insert the new node before the reference node
@@ -24,7 +25,7 @@ document.body.appendChild(modal);
 // Add style for Germany
 
 var style = document.createElement('style');
-style.innerHTML = '  .product-dimensions__container>table:first-child { display:none}';
+style.innerHTML = '.product-dimensions__container table {display:none!important;} .product-dimensions__container table#germantable {display:table!important;}';
 document.head.appendChild(style);
 
 
